@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	background-color: #282d35;
+	color: #fff;
+	font-family: Inter, sans-serif;
+	height: 100vh;
+}
+header {
+	background: #21222a;
+	color: #61dafb;
+}
+.logo {
+	width: 40px;
+	padding-right: 5px;
+}
+
+nav {
+	align-items: center;
+	margin-left: 1rem;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+.text-white {
+	color: #fff;
+	margin-right: 10px;
+}
+main {
+	padding: 57px 27px;
+	color: white;
+	background-image: url(../images/react-icon-large.png);
+	background-repeat: no-repeat;
+	background-position: right 75%;
+
+	margin-left: 1rem;
+	padding: 57px 27px;
+}
+.main--title {
+	margin: 0;
+	font-size: 39px;
+	letter-spacing: -1.6px;
+}
+.main--facts {
+	list-style: none;
+	margin-top: 46px;
+}
+.main--facts > li {
+	line-height: 19px;
+	padding-block: 10px;
+}
+main > li::before {
+	content: "• ";
+	color: #61dafb;
+	font-size: 1.4rem;
+}
+
+/* This attribute is not working on older version of Chrome This is new */
+li::marker {
+	font-size: 1.4rem;
+	color: #61dafb;
+}
